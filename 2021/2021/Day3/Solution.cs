@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SolarSweep.Day3
+namespace Submarine.Day3
 {
 	static class Solution
 	{

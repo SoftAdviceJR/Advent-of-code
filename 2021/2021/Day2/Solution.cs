@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SolarSweep.Day2
+namespace Submarine.Day2
 {
 	class Solution
 	{

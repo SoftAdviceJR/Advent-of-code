@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace SolarSweep
+namespace Submarine
 {
 	class Program
 	{
@@ -21,6 +21,10 @@ namespace SolarSweep
 
 			Console.WriteLine("Day 4, part 1: " + Day4.Solution.Part1());
 			Console.WriteLine("Day 4, part 2: " + Day4.Solution.Part2());
+			Console.WriteLine();
+
+			Console.WriteLine("Day 5, part 1: " + Day5.Solution.Part1());
+			Console.WriteLine("Day 5, part 2: " + Day5.Solution.Part2());
 			Console.ReadLine();
 		}
 

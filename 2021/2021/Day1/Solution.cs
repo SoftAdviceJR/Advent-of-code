@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SolarSweep.Day1
+namespace Submarine.Day1
 {
 	class Solution
 	{
@@ -15,7 +15,7 @@ namespace SolarSweep.Day1
 
 			int increases = 0;
 
-			foreach (var line in File.ReadLines("Input.txt"))
+			foreach (var line in File.ReadLines("Day1/Input.txt"))
 			{
 				int depth = int.Parse(line);
 				if (depth > lastInput)
@@ -31,7 +31,7 @@ namespace SolarSweep.Day1
 			int lastSum = 0;
 			int increases = 0;
 
-			var lines = File.ReadAllLines("Input.txt");
+			var lines = File.ReadAllLines("Day1/Input.txt");
 			var numbers = new int[lines.Length];
 
 			numbers[0] = int.Parse(lines[0]);
