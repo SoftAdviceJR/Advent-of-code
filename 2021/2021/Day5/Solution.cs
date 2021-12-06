@@ -43,7 +43,6 @@ namespace Submarine.Day5
 				//Console.WriteLine();
 			}
 
-
 			return map.crossings.ToList().Count(x => x >= 2);
 		}
 
@@ -79,12 +78,7 @@ namespace Submarine.Day5
 				//Console.WriteLine();
 			}
 
-
 			return map.crossings.ToList().Count(x => x >= 2);
-
 		}
-
 	}
-
-	
 }
