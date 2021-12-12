@@ -43,13 +43,13 @@ namespace Submarine.Day11
 		{
 			int flashes = 0;
 
-			while(octopi.Any(o => o >= 10))
+			while (octopi.Any(o => o >= 10))
 			{
 				for (int i = 0; i < rowCount; i++)
 				{
 					for (int j = 0; j < colCount; j++)
 					{
-						if(octopi[i,j] >= 10)
+						if (octopi[i, j] >= 10)
 						{
 							flashes++;
 							octopi[i, j] = -10000;
