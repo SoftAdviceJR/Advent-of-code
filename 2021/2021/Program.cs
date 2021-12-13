@@ -40,20 +40,24 @@ namespace Submarine
 			//Console.WriteLine("Day 8, part 2: " + Day8.Solution.Part2());
 			//Console.WriteLine();
 
-			Console.WriteLine("Day 9, part 1: " + Day9.Solution.Part1());
-			Console.WriteLine("Day 9, part 2: " + Day9.Solution.Part2());
-			Console.WriteLine();
+			//Console.WriteLine("Day 9, part 1: " + Day9.Solution.Part1());
+			//Console.WriteLine("Day 9, part 2: " + Day9.Solution.Part2());
+			//Console.WriteLine();
 
-			Console.WriteLine("Day 10, part 1: " + Day10.Solution.Part1());
-			Console.WriteLine("Day 10, part 2: " + Day10.Solution.Part2());
-			Console.WriteLine();
+			//Console.WriteLine("Day 10, part 1: " + Day10.Solution.Part1());
+			//Console.WriteLine("Day 10, part 2: " + Day10.Solution.Part2());
+			//Console.WriteLine();
 
-			Console.WriteLine("Day 11, part 1: " + Day11.Solution.Part1());
-			Console.WriteLine("Day 11, part 2: " + Day11.Solution.Part2());
-			Console.WriteLine();
+			//Console.WriteLine("Day 11, part 1: " + Day11.Solution.Part1());
+			//Console.WriteLine("Day 11, part 2: " + Day11.Solution.Part2());
+			//Console.WriteLine();
 
-			Console.WriteLine("Day 12, part 1: " + Day12.Solution.Part1());
-			Console.WriteLine("Day 12, part 2: " + Day12.Solution.Part2());
+			//Console.WriteLine("Day 12, part 1: " + Day12.Solution.Part1());
+			//Console.WriteLine("Day 12, part 2: " + Day12.Solution.Part2());
+			//Console.WriteLine();
+
+			Console.WriteLine("Day 13, part 1: " + Day13.Solution.Part1());
+			Console.WriteLine("Day 13, part 2: " + Day13.Solution.Part2());
 			Console.ReadLine();
 		}
 

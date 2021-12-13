@@ -43,7 +43,7 @@ namespace Submarine.Helpers
 			{
 				for (int j = 0; j < matrix.GetLength(1); j++)
 				{
-					Console.Write(matrix[i, j] + "\t");
+					Console.Write(matrix[i, j] + " ");
 				}
 				Console.WriteLine();
 			}
