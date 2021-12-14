@@ -26,9 +26,10 @@ namespace Submarine.Day13
 		{
 			var newDots = new List<Coordinate>();
 
-			char axis = instruction.Split(" ")[2][0];
-			int value = int.Parse(instruction.Split(" ")[2][2].ToString());
+			string line = instruction.Split(" ")[2];
 
+			char axis = line[0];
+			int value = int.Parse(line.Split("=")[1]);
 
 			foreach (var dot in Dots)
 			{
@@ -38,7 +39,7 @@ namespace Submarine.Day13
 			}
 
 			if (axis == 'x')
-				Width = (Width - 1) / 2;
+				Width = (Width -1 ) / 2;
 			else
 				Height = (Height - 1) / 2;
 

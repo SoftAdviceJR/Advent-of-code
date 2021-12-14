@@ -13,19 +13,12 @@ namespace Submarine.Day13
 {
 	static class Solution
 	{
-		private static string[] ReadInput()
+		private static Sheet ReadInput(out string[] instructions)
 		{
 			var lines = File.ReadAllLines("Day13/Input.txt");
 
-			return lines;
-		}
-
-		public static decimal Part1()
-		{
-			var lines = ReadInput();
-
 			List<Coordinate> dots = new List<Coordinate>();
-			List<string> instructions = new List<string>();
+			List<string> instr = new List<string>();
 
 			bool readingCoordinates = true;
 
@@ -44,36 +37,40 @@ namespace Submarine.Day13
 				}
 				else
 				{
-					instructions.Add(line);
+					instr.Add(line);
 				}
 			}
 
 			var sheet = new Sheet(dots);
 
-			Console.WriteLine();
+			instructions = instr.ToArray();
 
-			//sheet.Print();
-			//Console.WriteLine(sheet.Width);
+			return sheet;
+		}
 
-			//foreach (var instruction in instructions)
-			//{
-			//	sheet.Fold(instruction);
-			//}
+		public static decimal Part1()
+		{
+			var sheet = ReadInput(out string[] instructions);
+
 
 			sheet.Fold(instructions[0]);
-			//Console.WriteLine(sheet.Width);
-			//sheet.Print();
 
-
-
-			return sheet.Dots.Distinct().Count();
+			return sheet.Dots.Count;
 		}
 
 		public static long Part2()
 		{
-			var lines = ReadInput();
+			var sheet = ReadInput(out string[] instructions);
 
-			return 0;
+
+			foreach (var instruction in instructions)
+			{
+				sheet.Fold(instruction);
+			}
+
+			sheet.Print();
+
+			return sheet.Dots.Count;
 		}
 
 		
