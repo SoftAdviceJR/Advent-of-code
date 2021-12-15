@@ -17,7 +17,7 @@ namespace Submarine.Day15
 	{
 		private static Tile[] ReadInput()
 		{
-			var lines = File.ReadAllLines("Day15/Input.txt");
+			var lines = File.ReadAllLines("Day15/Sample.txt");
 
 			var tiles = new List<Tile>();
 
@@ -39,9 +39,9 @@ namespace Submarine.Day15
 
 			var path = AStar(allTiles);
 
-			
+			path.Print();
 
-			return -1;
+			return path.Risk;
 		}
 
 		public static long Part2()
@@ -53,7 +53,7 @@ namespace Submarine.Day15
 
 			var path = AStar(allTiles);
 
-			//path.Print();
+			path.Print();
 
 			return path.Risk;
 		}
@@ -84,6 +84,7 @@ namespace Submarine.Day15
 
 		private static Tile AStar(Tile[] allTiles)
 		{
+			Console.WriteLine();
 			var startTile = allTiles.First(x => x.X == 0 && x.Y == 0);
 			int rowCount = allTiles.Max(x => x.Y) + 1;
 			int colCount = allTiles.Max(x => x.X) + 1;
@@ -111,7 +112,8 @@ namespace Submarine.Day15
 				if (checkTile.Distance == 0)
 				{
 					timer.Stop();
-					Console.WriteLine(timer.ElapsedMilliseconds);
+					Console.WriteLine("Time in milliseconds: " + timer.ElapsedMilliseconds);
+					Console.WriteLine();
 					return checkTile;
 				}
 
