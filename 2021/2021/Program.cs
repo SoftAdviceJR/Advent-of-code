@@ -64,8 +64,12 @@ namespace Submarine
 			//Console.WriteLine("Day 14, part 2: " + Day14.Solution.Part2());
 			//Console.WriteLine();
 
-			Console.WriteLine("Day 15, part 1: " + Day15.Solution.Part1());
-			Console.WriteLine("Day 15, part 2: " + Day15.Solution.Part2());
+			//Console.WriteLine("Day 15, part 1: " + Day15.Solution.Part1());
+			//Console.WriteLine("Day 15, part 2: " + Day15.Solution.Part2());
+			//Console.WriteLine();
+
+			Console.WriteLine("Day 16, part 1: " + Day16.Solution.Part1());
+			Console.WriteLine("Day 16, part 2: " + Day16.Solution.Part2());
 			Console.WriteLine();
 
 			Console.ReadLine();
