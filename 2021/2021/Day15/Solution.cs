@@ -17,7 +17,7 @@ namespace Submarine.Day15
 	{
 		private static Tile[] ReadInput()
 		{
-			var lines = File.ReadAllLines("Day15/Sample.txt");
+			var lines = File.ReadAllLines("Day15/Input.txt");
 
 			var tiles = new List<Tile>();
 
@@ -39,21 +39,22 @@ namespace Submarine.Day15
 
 			var path = AStar(allTiles);
 
-			path.Print();
+			//path.Print();
 
 			return path.Risk;
 		}
 
 		public static long Part2()
 		{
+			//return 0;
+
 			var firstSection = ReadInput();
 
 			var allTiles = ExpandMap(firstSection, 5);
 
-
 			var path = AStar(allTiles);
 
-			path.Print();
+			//path.Print();
 
 			return path.Risk;
 		}

@@ -25,7 +25,7 @@ namespace Submarine.Day15
 			}
 		}
 		public int Distance { get; private set; }
-		public int Score { get => Risk + Distance; }
+		public int Score { get => Risk; }
 
 		//private int PathLength { get => GetPath().Count + 1; }
 
