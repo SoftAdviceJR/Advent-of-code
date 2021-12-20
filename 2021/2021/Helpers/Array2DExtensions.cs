@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using static System.Net.Mime.MediaTypeNames;
+
 namespace Submarine.Helpers
 {
 	static class Array2DExtensions
@@ -103,7 +105,7 @@ namespace Submarine.Helpers
 
 				if (col > 0)
 					matrix[row - 1, col - 1] = action(matrix[row - 1, col - 1]);
-				if(col < matrix.GetLength(1) - 1)
+				if (col < matrix.GetLength(1) - 1)
 					matrix[row - 1, col + 1] = action(matrix[row - 1, col + 1]);
 			}
 			if (row < matrix.GetLength(0) - 1)
@@ -120,12 +122,47 @@ namespace Submarine.Helpers
 				if (row < matrix.GetLength(0) - 1)
 					matrix[row + 1, col - 1] = action(matrix[row + 1, col - 1]);
 			}
-			if(col < matrix.GetLength(1) - 1)
+			if (col < matrix.GetLength(1) - 1)
 			{
 				matrix[row, col + 1] = action(matrix[row, col + 1]);
 			}
 
 			return matrix;
+		}
+
+		public static T[,] ExpandWith<T>(this T[,] original, T outside)
+		{
+			var newImage = new T[original.GetLength(0) + 2 , original.GetLength(1) + 2];
+			newImage.Fill(outside);
+			newImage.FillWithAt(original, 1, 1);
+
+			return newImage;
+		}
+
+		public static void FillWithAt<T>(this T[,] target, T[,] matrix, int row, int col)
+		{
+			for (int i = row; i < matrix.GetLength(0) + row; i++)
+			{
+				for (int j = col; j < matrix.GetLength(1) + col; j++)
+				{
+					target[i, j] = matrix[i - row, j - col];
+				}
+			}
+		}
+
+		public static T[,] GetRange<T>(this T[,] matrix, int row,  int col, int rowCount, int colCount)
+		{
+			var result = new T[rowCount, colCount];
+
+			for (int i = row; i < row + rowCount; i++)
+			{
+				for (int j = col; j < col + colCount; j++)
+				{
+					result[i - row, j - col] = matrix[i, j];
+				}
+			}
+
+			return result;
 		}
 	}
 }
