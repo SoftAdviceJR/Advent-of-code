@@ -10,8 +10,13 @@ namespace _2022
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Day 1 - Part 1: " + Day1.Part1.Solve().ToString());
-			Console.WriteLine("Day 1 - Part 2: " + Day1.Part2.Solve().ToString());
+			//Console.WriteLine("Day 1 - Part 1: " + Day1.Part1.Solve().ToString());
+			//Console.WriteLine("Day 1 - Part 2: " + Day1.Part2.Solve().ToString());
+			//Console.WriteLine(Day2.Part1.DoYouWin(new int[] { 3, 1 }));
+			//Console.WriteLine(Day2.Part1.DoYouWin(new int[] { 1, 2 }));
+			//Console.WriteLine(Day2.Part1.DoYouWin(new int[] { 2, 3 }));
+			//Console.WriteLine("Day 2 - Part 1: " + Day2.Part1.Solve().ToString());
+			Console.WriteLine("Day 2 - Part 2: " + Day2.Part2.Solve().ToString());
 			Console.ReadLine();
 		}
 	}
