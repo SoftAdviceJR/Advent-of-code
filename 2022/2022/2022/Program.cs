@@ -23,8 +23,12 @@ namespace _2022
 			//Console.WriteLine("Day 4 - Part 2: " + Day4.Part2.Solve().ToString());
 			//Console.WriteLine("Day 5 - Part 1: " + Day5.Part1.Solve().ToString());
 			//Console.WriteLine("Day 5 - Part 2: " + Day5.Part2.Solve().ToString());
-			Console.WriteLine("Day 6 - Part 1: " + Day6.Part1.Solve().ToString());
-			Console.WriteLine("Day 6 - Part 2: " + Day6.Part2.Solve().ToString());
+			//Console.WriteLine("Day 6 - Part 1: " + Day6.Part1.Solve().ToString());
+			//Console.WriteLine("Day 6 - Part 2: " + Day6.Part2.Solve().ToString());
+			Console.WriteLine("Day 7 - Part 1: " + Day7.Part1.Solve().ToString());
+			Console.WriteLine("Day 7 - Part 2: " + Day7.Part2.Solve().ToString());
+			//Console.WriteLine("Day 8 - Part 1: " + Day8.Part1.Solve().ToString());
+			//Console.WriteLine("Day 8 - Part 2: " + Day8.Part2.Solve().ToString());
 			Console.ReadLine();
 		}
 	}

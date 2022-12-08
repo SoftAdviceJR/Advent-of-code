@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using _2022.Day7;
+
+using static _2022.Day7.Part1;
+
 namespace _2022
 {
 	static class Print
@@ -29,6 +33,28 @@ namespace _2022
 			{
 				Console.WriteLine(line.ToString());
 			}
+		}
+
+        public static void Directory(DirectoryEntry dir)
+		{
+			SubDirectory(dir, 0);
+		}
+
+		private static void SubDirectory(DirectoryEntry dir, int lvl)
+		{
+			Console.WriteLine($"{new string(' ', lvl * 3)}-{dir.Name} ({dir.Parent?.Name})");
+			foreach (var child in dir.Children)
+			{
+				if (child.GetType() == typeof(DirectoryEntry))
+					SubDirectory((DirectoryEntry)child, lvl + 1);
+				else
+					File((FileEntry)child, lvl + 1);
+			}
+		}
+
+		private static void File(FileEntry file, int lvl)
+		{
+			Console.WriteLine($"{new string(' ', lvl * 3)}-{file.Name} ({file.Size})");
 		}
 	}
 }
