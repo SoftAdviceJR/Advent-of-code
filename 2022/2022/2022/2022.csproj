@@ -42,12 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day5\Part2.cs" />
+    <Compile Include="Day5\Part1.cs" />
+    <Compile Include="Day4\Assignment.cs" />
+    <Compile Include="Day4\Part2.cs" />
+    <Compile Include="Day4\Part1.cs" />
     <Compile Include="Day3\Part2.cs" />
     <Compile Include="Day3\Part1.cs" />
     <Compile Include="Day2\Part2.cs" />
     <Compile Include="Day2\Part1.cs" />
     <Compile Include="Day1\Part2.cs" />
     <Compile Include="Day1\Part1.cs" />
+    <Compile Include="Print.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,6 +61,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Day5\input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Day4\input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Day3\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
