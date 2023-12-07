@@ -10,7 +10,7 @@ namespace _2023
 
 		static void SetupLogging()
 		{
-			
+
 		}
 
 
@@ -39,11 +39,18 @@ namespace _2023
 			//	Console.WriteLine($"Day 03 | Part 2: " + solver.SolvePart2());
 			//}
 
-			{
-				var solver = new Day4.Solver();
+			//{
+			//	var solver = new Day4.Solver();
 
-				Console.WriteLine($"Day 04 | Part 1: " + solver.SolvePart1());
-				Console.WriteLine($"Day 04 | Part 2: " + solver.SolvePart2());
+			//	Console.WriteLine($"Day 04 | Part 1: " + solver.SolvePart1());
+			//	Console.WriteLine($"Day 04 | Part 2: " + solver.SolvePart2());
+			//}
+
+			{
+				var solver = new Day5.Solver();
+
+				Console.WriteLine($"Day 05 | Part 1: " + solver.SolvePart1());
+				Console.WriteLine($"Day 05 | Part 2: " + solver.SolvePart2());
 			}
 		}
 	}
