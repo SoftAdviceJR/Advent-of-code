@@ -26,10 +26,17 @@ namespace _2023
 			}
 
 			{
-				var solver = new Day2.Solver();
+				//var solver = new Day2.Solver();
 
 				//Console.WriteLine($"Day 02 | Part 1: " + solver.SolvePart1());
-				Console.WriteLine($"Day 02 | Part 2: " + solver.SolvePart2());
+				//Console.WriteLine($"Day 02 | Part 2: " + solver.SolvePart2());
+			}
+
+			{
+				var solver = new Day3.Solver();
+
+				Console.WriteLine($"Day 03 | Part 1: " + solver.SolvePart1());
+				Console.WriteLine($"Day 03 | Part 2: " + solver.SolvePart2());
 			}
 		}
 	}
