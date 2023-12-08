@@ -184,6 +184,9 @@ namespace _2023.Day7
 
 			var maxGroup = groups.MaxBy(g => g.Count());
 
+			if (maxGroup == null)
+				throw new InvalidOperationException();
+
 			var sb = new StringBuilder();
 
 			foreach ( var group in groups)
