@@ -60,11 +60,18 @@ namespace _2023
 			//	Console.WriteLine($"Day 06 | Part 2: " + solver.SolvePart2());
 			//}
 
-			{
-				var solver = new Day7.Solver();
+			//{
+			//	var solver = new Day7.Solver();
 
-				Console.WriteLine($"Day 07 | Part 1: " + solver.SolvePart1());
-				Console.WriteLine($"Day 07 | Part 2: " + solver.SolvePart2());
+			//	Console.WriteLine($"Day 07 | Part 1: " + solver.SolvePart1());
+			//	Console.WriteLine($"Day 07 | Part 2: " + solver.SolvePart2());
+			//}
+
+			{
+				var solver = new Day8.Solver();
+
+				//Console.WriteLine($"Day 08 | Part 1: " + solver.SolvePart1());
+				Console.WriteLine($"Day 08 | Part 2: " + solver.SolvePart2());
 			}
 		}
 	}
