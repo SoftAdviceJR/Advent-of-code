@@ -58,10 +58,7 @@ namespace _2023.Day6
 
 			for (int i = 0; i < Races.Length; i++)
 			{
-				int numberOfOptions = 1;
-
 				var race = Races[i];
-
 				
 				options.Add(race.WaysToWin());
 			}
