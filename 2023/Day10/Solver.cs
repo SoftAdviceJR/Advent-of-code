@@ -111,23 +111,7 @@ namespace _2023.Day10
 	}
 
 
-	public struct Coordinate
-	{
-		public int Row { get; }
-
-		public int Column { get; }
-
-		public Coordinate(int row, int column)
-		{
-			Row = row;
-			Column = column;
-		}
-
-		public override string ToString()
-		{
-			return $"({Row}, {Column})";
-		}
-	}
+	
 
 	public class Map
 	{

@@ -20,5 +20,35 @@ namespace _2023
 
 			return sb.ToString();
 		}
+
+		public static T[,] To2DArray<T>(this List<List<T>> input)
+		{
+			T[,] matrix = new T[input.Count, input[0].Count];
+
+			for (int i = 0; i < input.Count; i++)
+			{
+				for (int j = 0; j < input[i].Count; j++)
+				{
+					matrix[i, j] = input[i][j];
+				}
+			}
+
+			return matrix;
+		}
+
+		public static T[,] To2DArray<T>(this T[][] input)
+		{
+			T[,] matrix = new T[input.Length, input[0].Length];
+
+			for (int i = 0; i < input.Length; i++)
+			{
+				for (int j = 0; j < input[i].Length; j++)
+				{
+					matrix[i, j] = input[i][j];
+				}
+			}
+
+			return matrix;
+		}
 	}
 }
