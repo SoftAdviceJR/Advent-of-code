@@ -50,5 +50,34 @@ namespace _2023
 
 			return matrix;
 		}
+
+		public static char[,] To2DArray(this string[] lines)
+		{
+			return lines.Select(l => l.ToArray()).ToArray().To2DArray();
+		}
+
+		public static T[] GetRow<T>(this T[,] matrix, int row)
+		{
+			List<T> list = new List<T>();
+
+			for (int i = 0; i < matrix.GetLength(1); i++)
+			{
+				list.Add(matrix[row, i]);
+			}
+			
+			return list.ToArray();
+		}
+
+		public static T[] GetColumn<T>(this T[,] matrix, int column)
+		{
+			List<T> list = new List<T>();
+
+			for (int i = 0; i < matrix.GetLength(0); i++)
+			{
+				list.Add(matrix[i, column]);
+			}
+
+			return list.ToArray();
+		}
 	}
 }
