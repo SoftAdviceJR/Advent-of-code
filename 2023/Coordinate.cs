@@ -52,5 +52,32 @@ namespace _2023
 		{
 			return $"({Row}, {Column})";
 		}
+
+		public static bool operator ==(Coordinate c1, Coordinate c2)
+		{
+			return c1.Equals(c2);
+		}
+
+		public static bool operator !=(Coordinate c1, Coordinate c2)
+		{
+			return !c1.Equals(c2);
+		}
+
+		public override bool Equals([NotNullWhen(true)] object? obj)
+		{
+			if(obj?.GetType() != typeof(Coordinate)) return false;
+
+			return Equals((Coordinate)obj);
+		}
+
+		private bool Equals(Coordinate other)
+		{
+			return this.Row == other.Row && this.Column == other.Column;
+		}
+
+		public override int GetHashCode()
+		{
+			return Row.GetHashCode() ^ Column.GetHashCode();
+		}
 	}
 }
